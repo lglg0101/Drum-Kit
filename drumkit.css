@@ -1,0 +1,95 @@
+html {
+	font-size: 10px;
+	background: 
+	url(https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80) no-repeat center center; 
+	background-size: cover;
+	background-position: center;
+	min-height: 100%;
+
+}
+
+
+/*h1 {
+
+	font-size: 60px;
+	color: white;
+	text-align: center;
+	padding: 40px
+
+} */
+
+.keys {
+	font-family: monospace;
+  display: flex;
+  flex-grow: 1 ;
+  /*min-height: 80vh;*/
+  align-items: center;
+  justify-content: center;
+}
+
+.key {
+  border: thin solid white;
+  margin: 1rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 10rem;
+  text-align: center;
+  color: rgba(103, 128, 159, 1);
+  background: rgba(255, 0, 0, 0.4); 
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: white;
+
+}
+
+
+
+#gsTitle {
+	padding-top: 30px;
+	padding-bottom: 80px; 
+	display: flex;
+	justify-content: center;
+	color: #fff;
+	font-size: 108px;
+	font-family: "oswald", sans-serif;
+	// font-family: monospace;
+}
+.gsTitle-title {
+	margin: 0;
+	white-space: nowrap;
+}
+.gsTitle-color {
+	position: absolute;
+	top: 0;
+	opacity: 0;
+	margin: -.05em 0 0 .05em;
+	color: dodgerblue;
+	mix-blend-mode: darken;
+	transition: .1s;
+	transition-property: opacity, margin;
+}
+.gsTitle-b {
+	margin: .05em 0 0 -.05em;
+	color: tomato;
+	mix-blend-mode: color-burn;
+}
+.gsTitle-glitched .gsTitle-color {
+	opacity: .4;
+}
